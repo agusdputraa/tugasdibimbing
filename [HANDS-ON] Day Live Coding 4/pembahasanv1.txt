@@ -1,0 +1,48 @@
+class Pegawai
++ id
++ nama
++ golongan
++ tgl_lahir
+----------------------------
+getUsia()
+getGajiPokok() => isinya tergantung gol & usia
+getTotalGaji() => getGajiPokok()
+
+
+class Dosen extends Pegawai
++ NIDN
+----------------------------
+getTunjangan() => return 1.500.000
+getTunjanganFungsional() => tergantung usia
+getTotalGaji() => getGajiPokok() + getTunjangan() + getTunjanganFungsional()
+
+
+class NonDosen extends Pegawai
+
+----------------------------
+getTunjangan() => return 1.000.000
+getTotalGaji() => getGajiPokok() + getTunjangan()
+class Pegawai
++ id
++ nama
++ golongan
++ tgl_lahir
+----------------------------
+getUsia()
+getGajiPokok() => isinya tergantung gol & usia
+getTunjangan() => return 0
+getTotalGaji() => getGajiPokok() + getTunjangan()
+
+
+class Dosen extends Pegawai
++ NIDN
+----------------------------
+getTunjangan() => return 1.500.000
+getTunjanganFungsional() => tergantung usia
+getTotalGaji() => getGajiPokok() + getTunjangan() + getTunjanganFungsional()
+
+
+class NonDosen extends Pegawai
+
+----------------------------
+getTunjangan() => return 1.000.000
